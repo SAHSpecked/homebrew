@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "SAHCustom",
+        "abbreviation": "SAHC",
+        "fullname": "SAHCustom",
+        "authors": [
+          "SAHSpecked"
+        ],
+        "version": "1.0.0"
+      }
+    ],
+    "edition": "one",
+    "dateAdded": 1730000000
+  },
+  "subclass": [
+    {
+      "name": "Dracolich Patron",
+      "shortName": "Dracolich",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "edition": "one",
+      "additionalSpells": [
+            {
+                "prepared": {
+                    "3": [
+                        "bane|xphb",
+                        "cause fear|xge",
+                        "dragon's breath|xphb",
+                        "phantasmal force|xphb"
+                    ],
+                    "5": [
+                        "life transference|xge",
+                        "speak with dead|xphb"
+                    ],
+                    "7": [
+                        "phantasmal killer|xphb",
+                        "spirit of death|bmt"
+                    ],
+                    "9": [
+                        "antilife shell|xphb",
+                        "danse macabre|xge"
+                    ]
+                }
+            }
+        ],
+      "subclassFeatures": [
+        "Dracolich Patron|Warlock|XPHB|Dracolich|SAHCustom|3",
+        "Decaying Sustanence|Warlock|XPHB|Dracolich|SAHCustom|6",
+        "Immortal Husk|Warlock|XPHB|Dracolich|SAHCustom|10",
+        "Dread Unshackled|Warlock|XPHB|Dracolich|SAHCustom|14"
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Dracolich Patron",
+          "entries": [
+            "{@i Make a Deal with what is below Sieg}",
+			"Your pact draws on the Dracolich of Sieg. You made a pact with them to save yourself and your lover."
+          ]
+        }
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Dracolich Patron",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "When you choose this subclass at 3rd level, you gain the Dracolich Spells and Dreaded Dragon features.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Dracolich Spells|Warlock|XPHB|Dracolich|SAHCustom|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Dreaded Dragon|Warlock|XPHB|Dracolich|SAHCustom|3"
+        }
+      ]
+    },
+    {
+      "name": "Dracolich Spells",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Dracolich Spells table, you thereafter always have the listed spells prepared.",
+        {
+          "type": "table",
+          "caption": "Dracolich Spells",
+          "colLabels": [
+            "Warlock Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-3 text-center",
+            "col-9"
+          ],
+          "rows": [
+            [
+                "3",
+                "{@spell bane|xphb}, {@spell cause fear|xge}, {@spell dragon's breath|xphb}, {@spell phantasmal force|xphb}"
+            ],
+            [
+                "5",
+                "{@spell life transference|xge}, {@spell speak with dead|xphb}"
+            ],
+            [
+                "7",
+                "{@spell phantasmal killer|xphb}, {@spell spirit of death|bmt}"
+            ],
+            [
+                "9",
+                "{@spell antilife shell|xphb}, {@spell danse macabre|xge}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dreaded Dragon",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "You gain the ability to manifest aspects of your patron. As a {@variantrule Bonus Action|XPHB}, you transform for 1 minute and gain the following benefits.",
+        "When you take damage, you gain temporary hp equal to half the damage taken up to a maximum of 10 times your Warlock level until the start of your next turn. This effect may stack upon itself.",
+        "When you deal necrotic damage with a spell, you may choose to deal no necrotic damage and instead heal hp equal to half of the amount of necrotic damage you would have dealt.",
+        "If a spell you cast does not do necrotic damage, you may choose to deal {@dice 1d10} necrotic damage as part of that spell. Once per spell cast."
+      ]
+    },
+    {
+      "name": "Decaying Sustanence",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Your patron's power grows more comfortable in your skin. You no longer require food, drink, or breath to sustain your lifeforce.",
+        "In addition, if you start your turn with 50 temporary hit points or more, you regain one pact slot."
+        ]
+    },
+    {
+      "name": "Immortal Husk",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Your connection to The Fallen has saturated your body.",
+        "So long as you have immunity to necrotic damage, at dusk each day you may choose a damage type to become immune to until the following dusk.",
+        "If you do not have immunity to necrotic damage, you gain it."
+        ]
+    },
+    {
+      "name": "Dread Unshackled",
+      "source": "SAHCustom",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "subclassShortName": "Dracolich",
+      "subclassSource": "SAHCustom",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Your Dreaded Dragon ability gains the following effects.",
+        "While you have temporary hp, you may use a reaction to become resistant to any damage dealt by that attack until dusk.",
+        "When you deal necrotic damage, you ignore any resistance it has to necrotic damage. If a creature is immune to necrotic, it is instead resistant. If a creature absorbed necrotic damage, it is instead immune. If a creature is vulnerable to necrotic, you heal hit points equal to the amount of necrotic damage dealt.",
+        "The bonus necrotic damage you deal with spells increases to {@dice 2d10}. Once per spell cast."
+        ]  
+    }
+  ]
+}
