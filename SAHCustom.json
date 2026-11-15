@@ -5,9 +5,7 @@
         "json": "SAHCustom",
         "abbreviation": "SAHC",
         "fullname": "SAHCustom",
-        "authors": [
-          "SAHSpecked"
-        ],
+        "authors": ["SAHSpecked"],
         "version": "1.0.0"
       }
     ],
@@ -23,29 +21,15 @@
       "classSource": "XPHB",
       "edition": "one",
       "additionalSpells": [
-            {
-                "prepared": {
-                    "3": [
-                        "bane|xphb",
-                        "cause fear|xge",
-                        "dragon's breath|xphb",
-                        "phantasmal force|xphb"
-                    ],
-                    "5": [
-                        "life transference|xge",
-                        "speak with dead|xphb"
-                    ],
-                    "7": [
-                        "phantasmal killer|xphb",
-                        "spirit of death|bmt"
-                    ],
-                    "9": [
-                        "antilife shell|xphb",
-                        "danse macabre|xge"
-                    ]
-                }
-            }
-        ],
+        {
+          "prepared": {
+            "3": ["bane|xphb", "cause fear|xge", "dragon's breath|xphb", "phantasmal force|xphb"],
+            "5": ["life transference|xge", "speak with dead|xphb"],
+            "7": ["phantasmal killer|xphb", "spirit of death|bmt"],
+            "9": ["antilife shell|xphb", "danse macabre|xge"]
+          }
+        }
+      ],
       "subclassFeatures": [
         "Dracolich Patron|Warlock|XPHB|Dracolich|SAHCustom|3",
         "Decaying Sustanence|Warlock|XPHB|Dracolich|SAHCustom|6",
@@ -56,10 +40,7 @@
         {
           "type": "entries",
           "name": "Dracolich Patron",
-          "entries": [
-            "{@i Make a Deal with what is below Sieg}",
-			"Your pact draws on the Dracolich of Sieg. You made a pact with them to save yourself and your lover."
-          ]
+          "entries": []
         }
       ]
     }
@@ -75,6 +56,8 @@
       "level": 3,
       "header": 2,
       "entries": [
+        "{@i Make a Deal with what is below Sieg}",
+        "Your pact draws on the Dracolich of Sieg. You made a pact with them to save yourself and your lover.",
         "When you choose this subclass at 3rd level, you gain the Dracolich Spells and Dreaded Dragon features.",
         {
           "type": "refSubclassFeature",
@@ -100,31 +83,16 @@
         {
           "type": "table",
           "caption": "Dracolich Spells",
-          "colLabels": [
-            "Warlock Level",
-            "Spells"
-          ],
-          "colStyles": [
-            "col-3 text-center",
-            "col-9"
-          ],
+          "colLabels": ["Warlock Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-10"],
           "rows": [
             [
-                "3",
-                "{@spell bane|xphb}, {@spell cause fear|xge}, {@spell dragon's breath|xphb}, {@spell phantasmal force|xphb}"
+              "3",
+              "{@spell bane|xphb}, {@spell cause fear|xge}, {@spell dragon's breath|xphb}, {@spell phantasmal force|xphb}"
             ],
-            [
-                "5",
-                "{@spell life transference|xge}, {@spell speak with dead|xphb}"
-            ],
-            [
-                "7",
-                "{@spell phantasmal killer|xphb}, {@spell spirit of death|bmt}"
-            ],
-            [
-                "9",
-                "{@spell antilife shell|xphb}, {@spell danse macabre|xge}"
-            ]
+            ["5", "{@spell life transference|xge}, {@spell speak with dead|xphb}"],
+            ["7", "{@spell phantasmal killer|xphb}, {@spell spirit of death|bmt}"],
+            ["9", "{@spell antilife shell|xphb}, {@spell danse macabre|xge}"]
           ]
         }
       ]
@@ -157,7 +125,7 @@
       "entries": [
         "Your patron's power grows more comfortable in your skin. You no longer require food, drink, or breath to sustain your lifeforce.",
         "In addition, if you start your turn with 50 temporary hit points or more, you regain one pact slot."
-        ]
+      ]
     },
     {
       "name": "Immortal Husk",
@@ -172,7 +140,7 @@
         "Your connection to The Fallen has saturated your body.",
         "So long as you have immunity to necrotic damage, at dusk each day you may choose a damage type to become immune to until the following dusk.",
         "If you do not have immunity to necrotic damage, you gain it."
-        ]
+      ]
     },
     {
       "name": "Dread Unshackled",
@@ -188,7 +156,7 @@
         "While you have temporary hp, you may use a reaction to become resistant to any damage dealt by that attack until dusk.",
         "When you deal necrotic damage, you ignore any resistance it has to necrotic damage. If a creature is immune to necrotic, it is instead resistant. If a creature absorbed necrotic damage, it is instead immune. If a creature is vulnerable to necrotic, you heal hit points equal to the amount of necrotic damage dealt.",
         "The bonus necrotic damage you deal with spells increases to {@dice 2d10}. Once per spell cast."
-        ]  
+      ]
     }
   ]
 }
